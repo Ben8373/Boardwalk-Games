@@ -1,9 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-h1 *{
-    font-family: Roboto,Macondo;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/* CSS variables */
+:root {
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Macondo", cursive;
+  --primary-color: #3a2620; /* Dark Brown */
+  --secondary-color: #aa9581; /* light brown */
+  --highlight-color: #416a8e; /* blue */
+  --highlight-color-light: #7a9fc2; /* light blue */
 }
+
+/* Global styles */
 body {
-    color: red;
-    
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+}
+
+.sub-heading-color {
+    color: var(--highlight-color);
 }
